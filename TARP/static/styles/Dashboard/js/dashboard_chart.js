@@ -1,7 +1,7 @@
 var today = new Date();
 
 var dates = [];
-var startDate = new Date('2023-11-21');
+var startDate = new Date('2024-1-15');
 var currentDate = startDate;
 
 while (currentDate <= today) {
