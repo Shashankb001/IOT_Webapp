@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Dashboard</title>
+    <!-- Include Chart.js from a CDN -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/Dashboard/css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Menu bar -->
+    <div class="menu-bar">
+        <button class="menu-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+        <!-- Graphs -->
+        <div class="graph-container">
+            <canvas id="graph1"></canvas>
+            <canvas id="graph2"></canvas>
+            <canvas id="graph3"></canvas>
+            <canvas id="graph4"></canvas>
+            <canvas id="graph5"></canvas>
+            <canvas id="graph6"></canvas>
+        </div>
+    </div>
+
+    <div class="target-container">
+        <h2>Target Variable: <span id="target-value"></span></h2>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 SEMESTER-7 PROJECT. All rights reserved.</p>
+    </div>
+
+    <!-- Include external JavaScript file for chart creation -->
+    <script src="{{ url_for('static',filename='styles/Dashboard/js/dashboard_chart.js') }}"></script>
+    <script src="{{ url_for('static',filename='styles/Dashboard/js/logout.js') }}"></script>
+</body>
+</html>
